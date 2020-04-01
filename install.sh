@@ -1,7 +1,8 @@
 
 #!/bin/sh
 
-yay -S rofi
+# yay -S rofi
+# check https://github.com/addy-dclxvi/i3-starterpack
 
 mkdir ~/.config/i3status
 mv ~/.config/i3/config ~/.config/i3/confing_bak 
