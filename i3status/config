@@ -46,13 +46,13 @@ ethernet enp10s0 {
 }
 
 wireless wlp1s0 {
-        format_up = "<span background='#b48ead'>  %ip %essid </span>"
+        format_up = "<span background='#b48ead'>  %essid (%bitrate) </span>"
         format_down = "<span background='#b48ead'>  Disconnected </span>"
 }
 
 volume master {
         format = "<span background='#ebcb8b'>  %volume </span>"
-        format_muted = "<span background='#ebcb8b'>  Muted </span>"
+        format_muted = "<span background='#ebcb8b'>  </span>"
         device = "default"
         mixer = "Master"
         mixer_idx = 0
@@ -60,19 +60,19 @@ volume master {
 
 battery 1 {
 	last_full_capacity = true
-        format = "<span background='#a3be8c'> %status %percentage </span>"
+        format = "<span background='#a3be8c'> %status %percentage %remaining </span>"
         format_down = "No Battery"
-        status_chr = "Charging"
-        status_bat = "Battery"
+        status_chr = ""
+        status_bat = ""
         status_unk = "Unknown"
-        status_full = " Charged"
+        status_full = ""
         path = "/sys/class/power_supply/BAT%d/uevent"
         low_threshold = 10
 }
 
 tztime local {
 		format = "<span background='#81a1c1'>  %time </span>"
-		format_time = " %a %-d %b %H:%M"
+		format_time = "%a %-d %b %H:%M"
 		timezone = "Europe/Rome"
 }
 
