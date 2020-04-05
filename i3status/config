@@ -33,7 +33,7 @@ cpu_temperature 0 {
 }
 
 disk "/" {
-        format = "<span background='#fec7cd'>  /home %avail (%total) </span>"
+        format = "<span background='#fec7cd'>  %avail (%total) </span>"
 }
 
 disk "/mnt/data" {
@@ -46,7 +46,7 @@ ethernet enp10s0 {
 }
 
 wireless wlp1s0 {
-        format_up = "<span background='#b48ead'>  %essid (%bitrate) </span>"
+        format_up = "<span background='#b48ead'>  %essid (%bitrate) </span>"
         format_down = "<span background='#b48ead'>  Disconnected </span>"
 }
 
@@ -59,6 +59,7 @@ volume master {
 }
 
 battery 1 {
+	integer_battery_capacity = true
 	last_full_capacity = true
         format = "<span background='#a3be8c'> %status %percentage %remaining </span>"
         format_down = "No Battery"
