@@ -36,10 +36,17 @@ bindsym $super+Shift+w exec firefox
 bindsym $super+Shift+f exec thunar;workspace 3;focus
 bindsym $super+Shift+g exec geany
 
+# brightness control 
+bindsym XF86MonBrightnessDown exec xbacklight -10
+bindsym XF86MonBrightnessUp exec xbacklight +10
+
 #change volume
 bindsym XF86AudioRaiseVolume exec amixer -q set Master 5%+
 bindsym XF86AudioLowerVolume exec amixer -q set Master 5%-
 bindsym XF86AudioMute exec amixer set Master toggle
+
+# microphone
+bindsym XF86AudioMicMute exec amixer set Capture toggle
 
 # music control
 bindsym XF86AudioNext exec mpc next

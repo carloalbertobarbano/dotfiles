@@ -4,6 +4,7 @@
 # yay -S rofi
 # check https://github.com/addy-dclxvi/i3-starterpack
 
+ln -s $(pwd)/zshrc ~/.zshrc
 mkdir ~/.config/i3status
 mv ~/.config/i3/config ~/.config/i3/confing_bak 
 ln -s $(pwd)/i3/config ~/.config/i3/config
