@@ -13,6 +13,7 @@ order += "load"
 #order += "cpu_temperature 0"
 order += "disk /"
 order += "disk /mnt/data"
+order += "disk /mnt/dataset"
 order += "ethernet enp10s0"
 # order += "wireless wlp2s0"
 order += "volume master"
@@ -33,11 +34,15 @@ cpu_temperature 0 {
 }
 
 disk "/" {
-        format = "<span background='#fec7cd'>  /home %avail (%total) </span>"
+        format = "<span background='#fec7cd'>  %avail/%total </span>"
 }
 
 disk "/mnt/data" {
-        format = "<span background='#a1d569'>  /dev/md0 %avail (%total) </span>"
+        format = "<span background='#a1d569'>  md0 %avail/%total </span>"
+}
+
+disk "/mnt/dataset" {
+	format = "<span background='#a1d569'>  sdf1 %avail/%total </span>"
 }
 
 ethernet enp10s0 {
