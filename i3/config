@@ -29,7 +29,7 @@ bindsym $super+Return exec termite
 bindsym $super+d exec rofi -lines 12 -padding 18 -width 60 -location 0 -show drun -sidebar-mode -columns 3 -font 'Noto Sans 8'
 
 # lockscreen
-bindsym $super+shift+x exec betterlockscreen -l blur
+bindsym $super+shift+x exec betterlockscreen -l
 
 # common apps keybinds
 bindsym Print exec scrot 'Cheese_%a-%d%b%y_%H.%M.png' -e 'viewnior ~/$f'
