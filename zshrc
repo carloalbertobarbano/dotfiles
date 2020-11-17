@@ -103,3 +103,5 @@ source $ZSH/oh-my-zsh.sh
 #
 alias i3lock="betterlockscreen -l"
 
+setopt inc_append_history
+setopt share_history
