@@ -111,7 +111,7 @@ workspace 4 output eDP-1
 workspace 5 output DP1-3 HDMI-1
 workspace 6 output DP1-3 HDMI-1
 workspace 7 output DP1-3 HDMI-1
-workspace 8 output DP1-3 HDMI-1 
+workspace 8 output DP1-3 HDMI-1
 
 # move focused container to workspace
 bindsym $super+Shift+1 move container to workspace 1
