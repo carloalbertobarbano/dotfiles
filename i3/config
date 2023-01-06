@@ -16,12 +16,12 @@ exec --no-startup-id xsettingsd &
 exec --no-startup-id picom -b
 
 # Scratchpad terminal
-exec --no-startup-id termite -t "Scratchpad Terminal"
-for_window [title="Scratchpad Terminal"] floating enable, move scratchpad
-bindsym $super+e [title="Scratchpad Terminal"] scratchpad show
+exec --no-startup-id alacritty -t "scratchpad-terminal"
+for_window [title="scratchpad-terminal"] floating enable, move scratchpad
+bindsym $super+e [title="scratchpad-terminal"] scratchpad show
 
 # start a terminal
-bindsym $super+Return exec termite 
+bindsym $super+Return exec alacritty 
 
 # start dmenu (a program launcher)
 #bindsym $super+Shift+d exec i3-dmenu-desktop --dmenu="dmenu -i -fn 'Noto Sans:size=8'"
